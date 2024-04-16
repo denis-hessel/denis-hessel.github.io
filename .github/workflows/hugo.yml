@@ -50,6 +50,7 @@ jobs:
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       - name: Install global dependencies
         run: |
+          npm install postcss -D
           npm install -g postcss-cli
           npm install -g autoprefixer
       - name: Build with Hugo
