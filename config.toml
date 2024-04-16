@@ -4,10 +4,10 @@ title = "Denis Hessel"
 theme = "blist"
 
 DefaultContentLanguage = "de"
-DefaultContentLanguageInSubdir = true
+DefaultContentLanguageInSubdir = false
 [languages]
   [languages.de]
-    contentDir = "content/de" # Deutsch
+    contentDir = "content/" # Deutsch
     weight = 1
     languageName = "Deutsch"
     title = "Denis Hessel"
