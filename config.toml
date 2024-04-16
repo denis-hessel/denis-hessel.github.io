@@ -1,0 +1,133 @@
+baseurl = "https://denis-hessel.net"
+metaDataFormat = "yaml"
+title = "Denis Hessel"
+theme = "blist"
+
+DefaultContentLanguage = "de"
+DefaultContentLanguageInSubdir = true
+[languages]
+  [languages.de]
+    contentDir = "content/de" # Deutsch
+    weight = 1
+    languageName = "Deutsch"
+    title = "Denis Hessel"
+    [languages.de.params]
+      introTitle = "Hallo! 👋<br>Ich bin Denis Hessel."
+      introSubtitle = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      introPhoto = "/picture.jpg"
+
+    [[languages.de.menu.main]]
+        name = "Termine"
+        url = "termine"
+        weight = 1
+
+        
+    [[languages.de.menu.main]]
+        name = "Über mich"
+        url = "ueber-mich"
+        weight = 3
+
+    [[languages.de.menu.main]]
+        name = "Kontakt"
+        url = "kontakt"
+        weight = 4
+
+[params]
+  noindex = true
+  # Enable the darkmode toggle in header
+  darkModeToggle = true
+  
+  # Enable search in header
+  enableSearch = false
+
+  # Option to customize the search parameters of a page
+  # Below are the supported options; Note that including entire content
+  # may slowdown the loading of search results
+  # Title of page is included by default
+  searchKeys = [
+    "tags",
+    "date",
+    "categories",
+    "summary",
+    "content",
+    "link",
+    "author"
+  ]
+
+  # Custom copyright - optional
+  fotographer = "<a href='https://www.instagram.com/michaelmuecke.travel/'>Michael Mücke</a>, <a href='https://www.instagram.com/mr.leonhirsch/'>Malte Hömbach</a>, <a href='https://www.instagram.com/christian_improvisiert/'>Christian Berlin</a>"
+  copyright = "Denis Hessel · <a href='/impressum'>Impressum</a> · <a href='/datenschutz'>Datenschutz</a>"
+  favicon = "/favicon.ico"
+
+  # Color for the intro details and social links block, not applicable for dark mode
+  # Supported values: Any color from TailwindCSS default colors
+  # Reference: https://tailwindcss.com/docs/customizing-colors
+  ascentColor = "bg-blue-100" # "bg-lime-300" # "#bef264"
+
+  # The page bundle that is shown on the front page
+  frontBundle = "termine"
+
+  # Used to hide the post metadata such as posted date, reading time and word count
+  # Can be used at site level or page level
+  hideMeta = true
+  hideDates = false
+
+  # To hide "Other languages" option if the post is available in multiple languages
+  # Can be used at site level or page level
+  hideOtherLanguages = true
+
+  # Add support for Table of contents
+  # Can be added to a page level also in markdown frontmatter
+  toc = false
+
+  # Hides the thumbnail in post view
+  # Thumbnails in home and blog pages will still be shown
+  # This setting can also be in page's markdown file
+  hidePageThumbnail = false
+
+# Comments system
+[params.comments]
+  # Supports disqus, giscus and utterances
+  # Check hugo docs for setting up disqus
+  system = "giscus"
+
+  # Options for giscus, exclude hyphens
+  repo = ""
+  repoid = ""
+  category = ""
+  categoryid = ""
+  mapping = ""
+  strict = ""
+  reactionsenabled = ""
+  emitmetadata = ""
+  inputposition = ""
+  theme = ""
+
+  # Options for utterances, exclude hyphens
+  # repo = ""
+  # issueterm = ""
+  # theme = ""
+
+[params.homepage.social]
+  # Global params common for both languages
+  title = "Lass uns in Verbindung gehen!"
+  description = "hallo@denis-hessel.net"
+
+
+#[[menu.main]]
+#  name = "About"
+#  url = "/about"
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    # Enable to include inline HTML
+    unsafe = true
