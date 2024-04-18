@@ -8,4 +8,5 @@ type: contact
 hideMeta: true
 ---
 
-hallo@denis-hessel.net
+(An-)Fragen, Ideen oder Freude am gemeinsamen Austausch? <br>
+Schreib mir gerne: ✨ hallo@denis-hessel.net ✨
