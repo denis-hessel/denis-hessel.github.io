@@ -12,8 +12,8 @@ DefaultContentLanguageInSubdir = false
     languageName = "Deutsch"
     title = "Denis Hessel"
     [languages.de.params]
-      introTitle = "Hallo! 👋<br>Ich bin Denis Hessel."
-      introSubtitle = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+      introTitle = "Hallo! 👋<br>Ich bin <a href='/ueber-mich'>Denis Hessel</a>."
+      introSubtitle = "Lass uns gemeinsam neue Formen des Miteinanders gestalten – für eine friedliche, empathische und lebendige Welt. <br><br>(Und ganz unter uns, für ein Hammerleben 🔨)"
       introPhoto = "/picture.jpg"
 
     [[languages.de.menu.main]]
