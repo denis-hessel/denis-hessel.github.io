@@ -110,8 +110,8 @@ DefaultContentLanguageInSubdir = false
 
 [params.homepage.social]
   # Global params common for both languages
-  title = "Lass uns in Verbindung gehen!"
-  description = "Was bewegt dich? Was würde dein Leben noch großartiger machen? <br>Schreib mir gerne: hallo@denis-hessel.net"
+  title = "Lass uns reden!"
+  description = "Was bewegt dich? Was würde dein Leben noch großartiger machen? <br>Schreib mir gerne: ✨ hallo@denis-hessel.net ✨"
 
 
 #[[menu.main]]
